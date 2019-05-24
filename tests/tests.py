@@ -39,7 +39,7 @@ class TestSum(unittest.TestCase):
     def test_bad_type(self):
         data = "banana"
         with self.assertRaises(TypeError):
-            result = sum(data)
+            sum(data)
 
 
 if __name__ == "__main__":
