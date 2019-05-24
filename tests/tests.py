@@ -20,6 +20,14 @@ class TestSum(unittest.TestCase):
         result = sum(data)
         self.assertEqual(result, 6)
 
+    def test_list_floats(self):
+        """
+        Test that it can sum a list of floats
+        """
+        data = [0.5, 0.4, 0.1]
+        result = sum(data)
+        self.assertEqual(result, 1)
+
     def test_list_fractions(self):
         """
         Test that it can sum a list of fractions
